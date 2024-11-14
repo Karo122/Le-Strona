@@ -7,36 +7,37 @@
             alert("Witaj przybyszu");
             };
             
-            function WinOpen_z1()
+            function open()
             {
                 window.open("z1_rzes.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
             }
-            <script>
+            function close()
+            {
+                window.close()
+            }
+            
             function myFunction()    
             {
                 alert("Hello! I am an alert box!");
             }
-</script>
         </script>
+        <!-- (moje) window.onload - wwyświetla po załadowaniu się okna
+                    alert() - otwiera alert box z wiadomością i przyciskiem OK -->
     </head>
     <body>
-        <script type="text/javascript">
-        alert('<%: TempData["Resultat"]%>');
-        </script>
-        <p style="color: red; font-size: 20pt;font-weight: bold;">Szkielet zaliczeniowy JavaScript Karolina Rzeszewicz klasa 3F</p>
+        <p style="color: black; font-size: 20pt;font-weight: bold;">To tylko moja srona i móje przycisk, nie przjmuj się nim</p>
         <form>
-            <input type="button" name="zadanie1" value="zadanie1-rzeszewicz" onclick="WinOpen_z1(' ')">
-            <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+            <input type="button" name="przycisk" value="zadanie1-rzeszewicz" onclick="open(' ')">
+            <input type="button" value="zamknij okno" onclick="close()"/>
         </form>
       <!-- win.open otwiera okno -->
-      <!-- alert() otwiera alert box z wiadomością i przyciskiem OK -->
+      
       <!-- prompt() otwiera dialog box i odbiera odpowiedź użytkownika -->
       <!-- confirm() otwiera dialog box i pyta o potwierdzenie od użytkownika -->
 
-        <!-- (dodatkowe) window.onload wwyświetla po załadowaniu się okna-->
+
+
+        
         <!-- Karolina Rzeszewicz 3F -->
-      
-      
-      <!-- https://www.w3schools.com/jsref/met_win_prompt.asp -->
     </body>
 </html>
