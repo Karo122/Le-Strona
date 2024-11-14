@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>Le Stronã</title>
+         <meta charset="utf-8"> 
         <script type="text/javascript">
             window.onload = function() 
             {
             alert("Witaj przybyszu");
-            };
+            }
             
             function open()
             {
@@ -15,17 +16,12 @@
             {
                 window.close()
             }
-            
-            function myFunction()    
-            {
-                alert("Hello! I am an alert box!");
-            }
         </script>
         <!-- (moje) window.onload - wwyświetla po załadowaniu się okna
                     alert() - otwiera alert box z wiadomością i przyciskiem OK -->
     </head>
     <body>
-        <p style="color: black; font-size: 20pt;font-weight: bold;">To tylko moja srona i móje przycisk, nie przjmuj się nim</p>
+        document.write("To tylko moja srona i mój przycisk, nie przjmuj się nim".fontcolor("black")+"<br>");
         <form>
             <input type="button" name="przycisk" value="zadanie1-rzeszewicz" onclick="open(' ')">
             <input type="button" value="zamknij okno" onclick="close()"/>
